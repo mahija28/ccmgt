@@ -43,12 +43,16 @@ public class Query {
 	
 	public void execute(){
 		//To To: Write your query here and print out the result
-		System.out.println("To Do Here");
+		System.out.println("Query Result:");
 		
         //Executing the query
         result = session.execute("select * from emp");
         for(Row row: result){
         	System.out.format("%s %s\n", row.getString("emp_first"), row.getString("emp_last"));
         }
+	}
+	
+	public void hello(){
+		System.out.println("Hello World");
 	}
 };
