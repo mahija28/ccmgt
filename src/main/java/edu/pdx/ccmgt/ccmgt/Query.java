@@ -9,6 +9,7 @@ public class Query {
 	Session session;
 	ResultSet result;
 	
+	
 	public void connect(String host, int port, String keyspace){
         //creating Cluster object
         cluster = Cluster.builder().withPort(port).addContactPoint(host).build();
